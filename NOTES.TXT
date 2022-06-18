@@ -1,0 +1,11 @@
+Notas Durante el Curso de Django.
+
+----------------------------------
+
+django-admin startproject nombre_proyecto = Crea un proyecto nuevo.
+python manage.py runserver = Inicia el servidor de desarrollo. 
+python manage.py createsuperuser = Crea un usuario superusuario.
+python manage.py makemigrations = Crea una migración.
+python manage.py migrate = Ejecuta la migración.
+python manage.py shell = Abre una shell.
+python manage.py showmigrations = Muestra las migraciones.
