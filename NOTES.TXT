@@ -1,4 +1,7 @@
+----------------------------------
 Notas Durante el Curso de Django.
+----------------------------------
+----------------------------------
 
 ----------------------------------
 
@@ -9,3 +12,68 @@ python manage.py makemigrations = Crea una migración.
 python manage.py migrate = Ejecuta la migración.
 python manage.py shell = Abre una shell.
 python manage.py showmigrations = Muestra las migraciones.
+python manage.py sqlmigrate = Muestra la base de datos.
+python manage.py sqlsequencereset = Resetea la base de datos.
+python manage.py sqlclear = Limpia la base de datos.
+python manage.py sqlreset = Resetea la base de datos.
+python manage.py syncdb = Crea la base de datos.
+python manage.py test = Ejecuta los tests.
+python manage.py testapp = Ejecuta los tests.
+python manage.py testapp.tests = Ejecuta los tests.
+python manage.py testapp.tests.test_views = Ejecuta los tests.
+python manage.py testapp.tests.test_models = Ejecuta los tests.
+python manage.py testapp.tests.test_models.test_user = Ejecuta los tests.
+python manage.py startapp nombre_aplicacion = Crea una aplicación.
+python manage.py testapp.tests.test_models.test_user.test_create_user = Ejecuta los tests.
+
+----------------------------------
+Django Arguments.
+----------------------------------
+
+*args = Argumentos.
+**kwargs = Keyword arguments.
+return render(request, 'nombre_plantilla.html', context) = Renderiza una plantilla.
+context = {'nombre_variable': 'valor_variable'} = Crea un contexto.
+
+----------------------------------
+Urls.
+----------------------------------
+
+path('', view.as_view(), name='nombre_url') = Crea una url de una vista de clase.
+
+----------------------------------
+Environ.
+----------------------------------
+
+.environ = Asegura las variables de entorno.
+
+----------------------------------
+Fields.
+----------------------------------
+
+Fields = Campos.
+CharField = Campo de texto.
+EmailField = Campo de email.
+IntegerField = Campo de número entero.
+ImageField = Campo de imagen.
+FileField = Campo de archivo.
+TextField = Campo de texto largo.
+URLField = Campo de url.
+BooleanField = Campo de booleano.
+DateField = Campo de fecha.
+DateTimeField = Campo de fecha y hora.
+TimeField = Campo de hora.
+
+----------------------------------
+Models.
+----------------------------------
+
+admin.site.register(NombreModelo) = Registra un modelo en el admin.
+
+----------------------------------
+Forms.
+----------------------------------
+
+if request.method == 'POST': = Si el método es POST.
+{% csrf_token %} = Token de seguridad.
+{{ form.as_p }} = Muestra el formulario.

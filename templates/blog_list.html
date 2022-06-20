@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Blog list</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+
+    
+    <body>
+        <br>
+        {% for post in posts %}
+        <a href="{% url 'Blog:detail' post.id %}">{{ post.title }}</a>
+        <a href="{% url 'Blog:update' post.id %}">Update</a>
+        <a href="{% url 'Blog:delete' post.id %}">Delete</a>
+        {% endfor %}
+        </br>
+        <a href="{% url 'Blog:create' %}">Create</a>
+    </body>
+</html>
